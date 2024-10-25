@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiển thị số đếm ngược và kết quả xúc xắc</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>CodeGym88</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="tai.png" class="image" alt="Tài">
+    <div class="bet-container">
+      <input type="number" id="bet-tai" placeholder="Số tiền muốn đặt cược!">
+      <input type="button" value="Đặt Cược" onclick="game.placeBet('tai')">
+      <div class="bet-amount" id="bet-tai-amount"></div>
+    </div>
+  </div>
+
+  <div class="countdown" id="countdown">30</div>
+
+  <div class="column">
+    <img src="xiu.png" class="image" alt="Xỉu">
+    <div class="bet-container">
+      <input type="number" id="bet-xiu" placeholder="Số tiền muốn đặt cược!">
+      <input type="button" value="Đặt Cược" onclick="game.placeBet('xiu')">
+      <div class="bet-amount" id="bet-xiu-amount"></div>
+    </div>
+  </div>
+</div>
+
+<div class="result" id="result"></div>
+<div class="money" id="money-display">Số tiền hiện có: 1,000,000 VND</div>
+<div class="history" id="history">
+  <h2>Lịch sử kết quả</h2>
+</div>
+
+
+
+<script src="game.js"></script>
+
+</body>
+</html>
